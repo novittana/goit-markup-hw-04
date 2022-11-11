@@ -151,7 +151,6 @@ ul {
 }
 .top-contact-item {
   display: flex;
-  gap: 10px;
   align-items: center;
 }
 
@@ -167,6 +166,9 @@ ul {
 .top-email-link,
 .top-tel-link {
   color: var(--second-link-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-link:hover,
@@ -179,10 +181,18 @@ ul {
 .top-tel-link:focus,
 .top-tel-link:hover {
   color: var(--active-link-color);
+  fill: var(--active-link-color);
+}
+
+.top-contact-item {
+  fill: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .top-icon {
-  color: currentColor;
+  display: flex;
 }
 
 .header-list {
@@ -215,8 +225,11 @@ ul {
 
 .hero {
   background-color: var(--dark-background-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url(../images/img_backgraund.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img_backgraund.jpg);
   text-align: center;
   max-width: 1600px;
   margin: 0 auto;
@@ -266,7 +279,6 @@ ul {
 
 .feature-icon {
   display: flex;
-
 }
 
 .rectangle {
@@ -275,7 +287,7 @@ ul {
   align-items: center;
   width: 270px;
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -338,7 +350,7 @@ ul {
   margin-top: 10px;
 }
 
-.social-network-list{
+.social-network-list {
   display: flex;
   margin-top: 16px;
   gap: 10px;
@@ -346,7 +358,7 @@ ul {
   align-items: center;
 }
 
-.soc-network-item{
+.soc-network-item {
   width: 44px;
   height: 44px;
 }
@@ -363,33 +375,27 @@ ul {
 }
 
 .soc-net-icon {
-  fill:#AFB1B8;
-}
-
-.soc-network-link:hover {
-  background-color: #2196f3;
+  fill: #afb1b8;
 }
 
 .soc-network-link:hover .soc-net-icon {
   fill: #fff;
 }
 
-
 /*----------------CLIENTS---------------------*/
 
 .clients-list {
-display: flex;
-justify-content: center;
-gap: 30px;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-item {
   display: flex;
   width: 170px;
   height: 92px;
-  
 }
 
 .client-link {
@@ -397,31 +403,29 @@ align-items: center;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height:100%;
-  color: #AFB1B8;
-  border: 1px solid #AFB1B8;
+  height: 100%;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
 .client-logo {
-  fill:currentColor;
+  fill: currentColor;
 }
 
 .client-link:hover {
   border: 1px solid #2196f3;
-
 }
 
 .client-link:hover .client-logo {
   fill: #2196f3;
 }
 
-
-
 /*-----------------FOOTER---------------------*/
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer {
@@ -432,6 +436,10 @@ align-items: center;
 
 .footer-list {
   font-style: normal;
+}
+
+.address-conteiner {
+  width: 231px;
 }
 
 .footer-item {
@@ -476,29 +484,34 @@ align-items: center;
 }
 
 .footer-title {
-font-size: 14px;
-line-height: 1.14em;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color: #FFFFFF;
+  color: #ffffff;
 
-display: flex;
-align-items: baseline;
-margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
 }
 
-.footer-icon-link {
+.soc-network-item .footer-icon-link {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;;
+  color: #ffffff;
 }
 
-
+/* .footer-icon-link {
+   margin-top: 0;
+} */
 
 .footer-icon-link .soc-net-icon {
   fill: currentColor;
 }
 
+.soc-network-link:hover {
+  background-color: #2196f3;
+}
 
 /*-----------------PORTFOLIO-----------------------*/
 
@@ -534,12 +547,14 @@ margin-bottom: 20px;
 .filter-btn:focus {
   color: var(--active-btn-text-color);
   background-color: var(--active-btn-background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-item:hover,
 .project-item:focus {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-container {

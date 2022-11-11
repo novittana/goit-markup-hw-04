@@ -255,7 +255,7 @@ ul {
   color: var(--hero-btn-text-color);
   background: var(--hero-btn-background-color);
   cursor: pointer;
-
+  min-width: 216px;
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -378,7 +378,8 @@ ul {
   fill: #afb1b8;
 }
 
-.soc-network-link:hover .soc-net-icon {
+.soc-network-link:hover .soc-net-icon,
+.soc-network-link:focus .soc-net-icon {
   fill: #fff;
 }
 
@@ -413,11 +414,13 @@ ul {
   fill: currentColor;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid #2196f3;
 }
 
-.client-link:hover .client-logo {
+.client-link:hover .client-logo,
+.client-link:focus .client-logo {
   fill: #2196f3;
 }
 
@@ -509,7 +512,8 @@ ul {
   fill: currentColor;
 }
 
-.soc-network-link:hover {
+.soc-network-link:hover,
+.soc-network-link:focus {
   background-color: #2196f3;
 }
 
